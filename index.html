@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2 Player Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rock-Paper-Scissors (2 Players)</h1>
+
+  <div class="scoreboard">
+    <div class="score">Player 1: <span id="score1">0</span></div>
+    <div class="score">Player 2: <span id="score2">0</span></div>
+  </div>
+
+  <div class="players">
+    <div class="player" id="player1">
+      <h2>Player 1</h2>
+      <button onclick="selectChoice('rock', 1)">🪨 Rock</button>
+      <button onclick="selectChoice('paper', 1)">📄 Paper</button>
+      <button onclick="selectChoice('scissors', 1)">✂️ Scissors</button>
+    </div>
+
+    <div class="player" id="player2">
+      <h2>Player 2</h2>
+      <button onclick="selectChoice('rock', 2)">🪨 Rock</button>
+      <button onclick="selectChoice('paper', 2)">📄 Paper</button>
+      <button onclick="selectChoice('scissors', 2)">✂️ Scissors</button>
+    </div>
+  </div>
+
+  <div class="result">
+    <h2 id="resultText">Waiting for players...</h2>
+    <button onclick="resetGame()">🔁 Next Round</button>
+    <button onclick="resetAll()">🔄 Reset All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
